@@ -23,6 +23,7 @@ namespace DrawingStarMethod
             size = _size;
 
             SetPoint();
+
         }
 
         private void SetPoint()
@@ -40,6 +41,14 @@ namespace DrawingStarMethod
             starPoints[7] = new PointF(103 * scale + x, 150 * scale + y);
             starPoints[8] = new PointF(39 * scale + x, 196 * scale + y);
             starPoints[9] = new PointF(64 * scale + x, 122 * scale + y);
+        }
+
+        public void Move()
+        {
+            x += 4;
+            y += 4;
+
+            SetPoint();
         }
     }
 }
